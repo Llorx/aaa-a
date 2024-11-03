@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "target": "es2020",
+        "inlineSourceMap": false
+    },
+    "include": [
+        "./src/index.ts",
+        "src/cli.ts"
+    ]
+}

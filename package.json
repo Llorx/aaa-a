@@ -1,0 +1,32 @@
+{
+  "name": "aaa-a",
+  "version": "0.0.1",
+  "description": "The lightweight \"Act-Arrange-Assert\" oriented testing framework, with a new \"After\" addition",
+  "main": "lib/",
+  "types": "lib/types",
+  "files": [
+    "lib/"
+  ],
+  "bin": {
+    "aaa-a": "lib/cli.js"
+  },
+  "scripts": {
+    "watch": "npm run clean && npx tsc -p tsconfig.json -watch",
+    "build": "npm run clean && npx tsc -p tsconfig.build.json",
+    "build-debug": "npm run clean && npx tsc -p tsconfig.json",
+    "build-test": "npm run clean && npx tsc -p tsconfig.test.json",
+    "test": "node --test --experimental-test-coverage --test-coverage-exclude=**/*.test.* --test-coverage-exclude=**/test_folder_mock/**",
+    "test-watch": "node --test --watch",
+    "clean": "node -e \"require('fs').rm('lib', {recursive: true}, O_o => {})\""
+  },
+  "author": "Llorx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llorx/aaa-a"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.8",
+    "typescript": "^5.6.3"
+  }
+}

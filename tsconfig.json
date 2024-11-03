@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["esnext"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitOverride": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+        "removeComments": true,
+        "declaration": true,
+        "declarationDir": "./lib/types",
+        "inlineSourceMap": true,
+        "outDir": "./lib"
+    },
+    "include": [
+        "src/index.ts",
+        "src/cli.ts",
+        "src/**/*.test.ts",
+        "src/test_folder_mock/**/*.ts"
+    ]
+}
